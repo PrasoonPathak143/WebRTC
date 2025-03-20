@@ -1,0 +1,23 @@
+Web RTC enables real time communication
+
+Suppose 2 peers are there, you can connect them with Local IP Address (This will be same if they are in same network)
+
+But they are not in same network and if anyone of them or both are on NAT or Firewall (which helps to hide IP Address) 
+
+In those cases, we use google's STUN servers, so system hits request to STUN server and this returns them the IP Address and PORT Number
+
+If this fails then TURN server
+
+So these methods through which we can connect two servers are called ICE Candidates
+
+One who sends the request to connect sends "offer", one who responds to that is sends "answer"
+
+Video for ourselves is called "Local" and for the other person is called "Remote"
+
+Offer and Answer are SDP (Session Description Protocol), messages exchenged between peers to negotiate and establish a connection. 
+
+The offer describes the media capabilities and network information of the sending peer, while the answer is sent in response, indicating the agreed-upon parameters for the connection.
+This negotiation process allows WebRTC applications to determine the best settings for audio, video, and data transmission between peers.
+
+Once a connection is set through Socket IO, then there is direct communication and server is not involved
+

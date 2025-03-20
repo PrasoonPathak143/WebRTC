@@ -1,0 +1,63 @@
+/* /css/style.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Full black background */
+    color: white;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#videos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    gap: 20px;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+.video-player {
+    width: 45vw;
+    max-width: 600px;
+    height: auto;
+    background-color: #222; /* Just in case video doesn't load */
+    border: 2px solid #333;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+#controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.control-container {
+    background-color: #00ffff; /* Cyan */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 0 10px #00ffff88;
+}
+
+.control-container:hover {
+    background-color: #00cccc;
+}
+
+.control-container svg {
+    fill: white;
+}
