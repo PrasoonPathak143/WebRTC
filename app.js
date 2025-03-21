@@ -12,7 +12,12 @@ app.use(express.static(path.join(__dirname,'public')));
 
 io.on('connection', (socket) => {
   console.log('Client connected');
+  socket.on('signalingMessage', (data) => {
+    socket.broadcast.emit('signalingMessage', data);
+  });
 });
+
+
 
 app.get('/', (req, res) => {
   res.render("index");

@@ -42,7 +42,7 @@ body {
 }
 
 .control-container {
-    background-color: #00ffff; /* Cyan */
+    background-color: #2500cc; /* Cyan */
     border-radius: 50%;
     width: 60px;
     height: 60px;
@@ -55,7 +55,7 @@ body {
 }
 
 .control-container:hover {
-    background-color: #00cccc;
+    background-color: #5900ff;
 }
 
 .control-container svg {
